@@ -21,7 +21,7 @@ else {
 
 
 let getForecast = {
-    apiKey: "fba9ded37b21de3c17e0fb75f3980e9e",
+    key: "fba9ded37b21de3c17e0fb75f3980e9e",
     fetchForecastWeather: function (latitude, longitude) {
         fetch(
             "https://api.openweathermap.org/data/2.5/forecast?lat=" +
@@ -29,7 +29,7 @@ let getForecast = {
             "&lon=" +
             longitude +
             "&units=metric&appid=" + 
-            this.apiKey
+            this.key
         )
         .then((response) => {
             return response.json();
@@ -70,13 +70,13 @@ let getForecast = {
 }
 
 let getWeather = {
-    apiKey: "fba9ded37b21de3c17e0fb75f3980e9e",
+    key: "fba9ded37b21de3c17e0fb75f3980e9e",
     fetchWeather: function (city) {
         fetch(
             "https://api.openweathermap.org/data/2.5/weather?q=" +
             city +
             "&units=metric&appid=" +
-            this.apiKey
+            this.key
         )
         .then((response) => {
             return response.json();
