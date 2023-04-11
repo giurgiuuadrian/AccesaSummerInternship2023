@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <link rel="icon" type="image/svg+xml" href="images/weather-icon.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Accesa Summer Internship 2023 | Weather app</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="main.js" defer></script>
+</head>
+<body id="body">
+    <div class="flex-container">
+        <div class="input-form">
+            <div class="input-form-div blur">
+                <div class="input-form-div-input">
+                    <input type="text" id="search-bar" placeholder="City name..." class="input-style">
+                </div>
+                <div class="input-form-div-input">
+                    <button onclick="getWeather.searchWeather()" class="btn btn-input"><i class="fa fa-search"></i></button>
+                    <button onclick="addFavorite()" class="btn btn-input"><i class="fa fa-star"></i></button>    
+                </div>
+            </div>
+            <div class="input-form-div blur">
+                <div class="input-form-div-txt">
+                    <h4>Your favorite list</h4>
+                </div>
+                <div id="favLst" class="input-form-div-btns">
+                </div>
+            </div>
+        </div>
+        
+        <div class="show-data blur">
+            <div class="show-data-div">
+                <h2 id="city"></h2>
+                <h2 id="temp"></h2>
+            </div>
+            <div class="show-data-div">
+                <img alt="" id="icon" />
+                <h2 id="description"></h2>
+            </div>
+        </div>
+
+        <div class="show-forecast">
+            <div id="forecast-div-1" class="show-forecast-cards blur">
+                <p id="date-1"></p>
+                <p id="cityName-1" class="large"></p>
+                <img id="icon-forecast-1">
+                <p id="temp-1" class="large"></p>
+                <p id="description-1"></p>
+            </div>
+            <div id="forecast-div-9" class="show-forecast-cards blur">
+              <p id="date-9"></p>
+              <p id="cityName-9" class="large"></p>
+              <img id="icon-forecast-9">
+              <p id="temp-9" class="large"></p>
+              <p id="description-9"></p>
+            </div>
+            <div id="forecast-div-17" class="show-forecast-cards blur">
+              <p id="date-17"></p>
+              <p id="cityName-17" class="large"></p>
+              <img id="icon-forecast-17">
+              <p id="temp-17" class="large"></p>
+              <p id="description-17"></p>
+            </div>
+        </div>
+</body>
+</html>
