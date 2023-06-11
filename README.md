@@ -1,4 +1,4 @@
-# AccesaSummerInternship2023
+# Weather App
 
 Pentru a rula aplicatia trebuie deschis un terminal si navigat pana in folder,
 
